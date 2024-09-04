@@ -96,6 +96,10 @@ div.task > button:hover {
     background: rgb(168, 166, 166);
 }
 
+.remove {
+    display: none;
+}
+
 div.task > input {
     display: inline-block;
     margin: 0;

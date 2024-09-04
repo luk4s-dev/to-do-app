@@ -23,7 +23,6 @@ const createCheckbox = (() => {
 
 const createBtn = (() => {
     let button = document.createElement('button')
-    button.classList.add('remove') 
     button.setAttribute('onClick', 'deleteTask()')
     button.innerHTML = `<ion-icon name="trash-outline"></ion-icon>`
 
@@ -47,6 +46,6 @@ button.addEventListener('click', () => {
     input.value = '';
 })
 
-function deleteTask {
-    
+function deleteTask() {
+    container.removeChild(body.querySelector('.task'));
 }
