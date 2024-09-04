@@ -24,11 +24,8 @@ const createCheckbox = (() => {
 const createBtn = (() => {
     let button = document.createElement('button')
     button.classList.add('remove') 
+    button.setAttribute('onClick', 'deleteTask()')
     button.innerHTML = `<ion-icon name="trash-outline"></ion-icon>`
-
-    button.addEventListener('click', () => {
-        container.removeChild(button);
-    });
 
     return button;
 })
@@ -46,4 +43,10 @@ const createDiv = (() => {
 
 button.addEventListener('click', () => {
     cardTask();
+
+    input.value = '';
 })
+
+function deleteTask {
+    
+}
